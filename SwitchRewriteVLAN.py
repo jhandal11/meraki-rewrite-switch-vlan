@@ -28,7 +28,6 @@ for row in per_net_list:
 		else:
 			continue
 	if tag in net_tags:
-		#print ("Raw JSON: %s \n" % row) # for watching live
 		net_id_list.append(net_id)
 
 print ("NETWORKS TO MODIFY")
@@ -49,7 +48,6 @@ for net in net_id_list:
 		# For combined networks, only look at MX
 		if 'MS' in device_model:
 			device_id_list.append(device_serial)
-			#print ("Writing to CSV: %s \n" % csv_row_text) # for watching live
 
 print ("SWITCHES TO MODIFY")
 print (device_id_list)
